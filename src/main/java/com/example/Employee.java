@@ -2,11 +2,13 @@ package com.example;
 
 public class Employee {
 
+	private String name;
 	private String id;
 	private double salary;
 	private boolean paid;
 
-	public Employee(String id, double salary) {
+	public Employee(String name, String id, double salary) {
+		this.name = name;
 		this.id = id;
 		this.salary = salary;
 	}
