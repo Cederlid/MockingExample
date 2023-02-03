@@ -5,8 +5,9 @@ import java.util.List;
 public class EmployeeRepositoryStub implements EmployeeRepository{
     private List<Employee> employees;
 
-    public EmployeeRepositoryStub(List<Employee> employees){
-        this.employees = employees;
+
+    public EmployeeRepositoryStub(List<Employee> employee){
+        this.employees = employee;
     }
 
     @Override
@@ -16,6 +17,7 @@ public class EmployeeRepositoryStub implements EmployeeRepository{
 
     @Override
     public Employee save(Employee e) {
-       return null;
+        employees.add(e);
+       return e;
     }
 }
