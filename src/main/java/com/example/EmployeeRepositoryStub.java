@@ -1,16 +1,10 @@
 package com.example;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 
 public class EmployeeRepositoryStub implements EmployeeRepository {
     private List<Employee> employees;
-
-    public EmployeeRepositoryStub() {
-        employees = new ArrayList<>();
-    }
 
     public EmployeeRepositoryStub(List<Employee> employee) {
         this.employees = employee;
