@@ -27,7 +27,7 @@ public class EmployeeRepositoryStub implements EmployeeRepository {
         return employee;
     }
 
-    private int findEmployeeIndex(String id) {
+    public int findEmployeeIndex(String id) {
         for (int i = 0; i < employees.size(); i++) {
             if (employees.get(i).getId() == id) {
                 return i;
